@@ -11,6 +11,12 @@ export default [
   ...fixupConfigRules(pluginReactConfig),
   {
     rules: {
+      semi: 'error',
+      'prefer-const': 'warn',
+      'no-unused-vars': 'warn',
+      'no-unused-expressions': 'warn',
+      'react/prop-types': 'off',
+      'no-undef': 'warn',
       'react/react-in-jsx-scope': 'off',
     },
   },
@@ -36,16 +42,5 @@ export default [
       '*.lock.lock.yml',
       '*.lock.lock.lock',
     ],
-
-    rules: {
-      // ... any rules you want
-      semi: 'error',
-      'prefer-const': 'warn',
-      'no-unused-vars': 'warn',
-      'no-unused-expressions': 'warn',
-      'react/prop-types': 'off',
-      'no-undef': 'warn',
-      'react/react-in-jsx-scope': 'off',
-    },
   },
 ];
