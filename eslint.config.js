@@ -10,6 +10,11 @@ export default [
   pluginJs.configs.recommended,
   ...fixupConfigRules(pluginReactConfig),
   {
+    rules: {
+      'react/react-in-jsx-scope': 'off',
+    },
+  },
+  {
     ignores: [
       '.config/*',
       'dist/*',
@@ -40,7 +45,7 @@ export default [
       'no-unused-expressions': 'warn',
       'react/prop-types': 'off',
       'no-undef': 'warn',
-      'import/no-unresolved': 'error',
+      'react/react-in-jsx-scope': 'off',
     },
   },
 ];
