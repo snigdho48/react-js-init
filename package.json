@@ -43,7 +43,7 @@
     "git-format-staged": "^3.1.1",
     "globals": "^15.6.0",
     "prettier": "^3.3.2",
-    "vite": "^5.3.1",
+    "vite": "^5.3.6",
     "vitest": "^1.6.0"
   },
   "prettier": {
